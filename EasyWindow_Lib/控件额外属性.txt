@@ -1,0 +1,204 @@
+// window 主体窗口 控件 属性
+
+#基础属性
+xywh 设置pos和范围 MoveWindow		√
+text  控件默认文本 SetWindowText		√
+style 设置窗口样式 SetWindowLong		√
+visible 窗体是否可见 ShowWindow		√
+
+#特殊属性
+fullscreen 窗体是否全屏	 WS_MAXIMIZE		√
+resize 大小尺寸是否可拉伸	  WS_THICKFRAME		√
+enable 是否可接受用户信息	    EnableWindow	√
+maxbox 最大化按钮 WS_MAXIMIZEBOX			√	
+minbox 最小化按钮 WS_MINIMIZEBOX			√
+menu 设置窗体菜单 SetMenu			√
+
+
+#代码属性
+id 	用于用户层获取 属性Map	√
+screenw 屏幕长度			√	
+screenh 屏幕高度			√
+
+// Edit 控件 属性
+
+# 基础属性
+xywh 设置pos和范围 MoveWindow	√
+text  控件默认文本 SetWindowText		√
+style 设置窗口样式 SetWindowLong		√
+visible 窗体是否可见 ShowWindow		√
+
+# 交互属性
+enable 设置禁用控件 Edit_Enable				√
+fmtlines 设置多行是否获取是否包含软换行符 Edit_FmtLines	√
+banner 设置提示符号 Edit_SetCueBannerText			√
+limit 限制文本长度 Edit_LimitText				√
+readyonly 是否只读 Edit_SetReadOnly			√
+
+#非交互属性
+align 对齐方式 ES_CENTER ES_LEFT ES_RIGHT	√
+multiline 多行文本 ES_MULTILINE			√
+password 是否为密码格式 ES_PASSWORD		√
+number 是否为纯数字模式 ES_NUMBER			√
+vscroll 是否垂直滚动 ES_AUTOVSCROLL		√
+hscroll 是否纵向滚动 ES_AUTOHSCROLL		√
+border 是否有边框 WS_BORDER			√
+
+#代码属性
+id  用于用户层获取 属性Map	√
+fontfamily 用于指定字体映射表	√
+fontsize 用于指定字体大小	√
+
+// button 控件 属性
+
+#基础属性
+text  按钮显示文本 SetWindowText		√
+xywh 设置pos和范围 MoveWindow		√
+style 设置窗口样式 SetWindowLong		√
+visible 窗体是否可见 ShowWindow		√
+
+#交互属性
+enable 	是否禁用控件 Button_Enable			√
+isclick 是否按点击方式表现 Button_SetState		√
+
+#非交互属性
+align   左右对齐方式 BS_BOTTOM BS_CENTER BS_TOP		√
+valign	上下对齐方式 BS_TOP BS_BOTTOM BS_VCENTER		√
+fontfamily 用于指定字体映射表	√
+fontsize 用于指定字体大小 	√
+btntype 用于指定按钮类型 		√
+
+#代码属性
+onclick 按钮点击用户交互事件 	√
+id  用于用户层获取 属性Map	√
+
+// ComboBox 组合框控件
+
+# 基础属性
+xywh 设置pos和范围 MoveWindow				√	
+style 设置窗口样式 SetWindowLong				√	
+visible 窗体是否可见 ShowWindow				√
+
+#交互属性
+enable 	是否禁用控件 ComboBox_Enable			√			
+
+#非交互属性
+list	组合所有项目	ComboBox_AddString		√
+current	当前选择的项目	ComboBox_SetCurSel		√
+banner	提示横幅文本	ComboBox_SetCueBannerText	√
+fontfamily 用于指定字体映射表				√
+fontsize 用于指定字体大小				√
+
+#代码属性
+id 用于用户层获取 属性Map					√
+
+// progress
+
+# 交互属性
+xywh 设置pos和范围 MoveWindow							√
+style 设置窗口样式 SetWindowLong							√
+visible 窗体是否可见 ShowWindow							√
+
+# 非交互属性
+max	最大值	PBM_SETRANGE							√
+min	最小值	PBM_SETRANGE							√
+pos	当前值	PBM_SETPOS							√
+step	步增量	PBM_SETSTEP							√
+frame	窗口是否有对话框样式 WS_DLGFRAME						√
+resize 大小尺寸是否可拉伸	  WS_THICKFRAME						√
+state	进度条状态 PBS_MARQUEE PBS_SMOOTH PBS_SMOOTHREVERSE PBS_VERTICAL		√
+
+
+# 代码属性
+id 用于用户层获取 属性Map								√
+update 是否增量									√
+
+
+// ScrollBar
+
+# 交互属性
+xywh 设置pos和范围 MoveWindow			√
+style 设置窗口样式 SetWindowLong			√
+visible 窗体是否可见 ShowWindow			√
+
+
+# 非交互属性
+vmin	最小vert值 SetScrollInfo		√
+vmax	最大vert值 SetScrollInfo		√
+vpos	当前vert值 SetScrollInfo		√
+vert	包含vert				√
+hmin	最小hert值 SetScrollInfo		√
+hmax	最大hert值 SetScrollInfo		√
+hpos	当前hert值 SetScrollInfo		√
+hert	包含hert				√
+
+
+# 代码属性
+id 用于用户层获取 属性Map			√
+
+// LISTBOX
+# 基础属性
+xywh 设置pos和范围 MoveWindow		√				
+style 设置窗口样式 SetWindowLong		√			
+visible 窗体是否可见 ShowWindow		√		
+
+#交互属性
+enable 	是否禁用控件 EnableWindow	√					
+
+#非交互属性
+border 是否有边框 WS_BORDER		√
+list	组合所有项目	LB_ADDSTRING	√
+current	当前选择的项目	LB_SETCURSEL	√
+fontfamily 用于指定字体映射表		√		
+fontsize 用于指定字体大小		√		
+
+#代码属性
+id 用于用户层获取 属性Map			√			
+
+// static
+xywh 设置pos和范围 MoveWindow		√
+text  控件默认文本 SetWindowText		√
+style 设置窗口样式 SetWindowLong		√
+visible 窗体是否可见 ShowWindow		
+
+# 交互属性
+enable 设置禁用控件 Edit_Enable		√			
+
+#非交互属性
+fontcolor	字体颜色			√
+bgcoolor	背景颜色			√
+bgvisible	背景是否可见		√
+
+#代码属性
+id  用于用户层获取 属性Map		√
+fontfamily 用于指定字体映射表		√
+fontsize 用于指定字体大小		√
+
+
+// image
+xywh 设置pos和范围 MoveWindow		√
+style 设置窗口样式 SetWindowLong		√
+visible 窗体是否可见 ShowWindow		√
+
+enable 是否可接受用户信息	    EnableWindow	√
+path 图片地址			√
+
+id 	用于用户层获取 属性Map	√
+
+// layer
+
+# 用户属性
+xywh 设置pos和范围 MoveWindow		√
+style 设置窗口样式 SetWindowLong		√
+visible 窗体是否可见 ShowWindow		√
+
+# 非用户属性
+enable 是否可接受用户信息	    EnableWindow	√	
+resize 大小尺寸是否可拉伸	  WS_THICKFRAME		√
+frame	窗口是否有对话框样式 WS_DLGFRAME		√
+border	窗口具有细线边框		WS_BORDER	√	
+acceptfile 是否接受文件  WS_EX_ACCEPTFILES	√	
+
+#代码属性
+id 	用于用户层获取 属性Map	√
+color   设置背景颜色		√

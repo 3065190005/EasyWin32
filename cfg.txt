@@ -1,0 +1,17 @@
+<windowe>[title="111"]
+	<button>[text="aa"]
+	</button>
+</window>
+
+Program: Body EOF
+
+Body: LESS KEY_WINDOW GREATE Attribute (Child)? LESS SLASH KEY_WINDOW GREATE
+
+Child: LESS ChildKey GREATE Attribute (Child)* LESS SLASH ChildKey GREATE (Child)?
+
+Attribute : LBRACKET (Element)? RBRACKET
+
+Element : VAR_ID EQUAL String_const | (COMMA Element)?
+
+ChildKey : KEY_BUTTON|
+	   KEY_INPUT
